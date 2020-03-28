@@ -13153,15 +13153,18 @@ html {
   color: #fff;
 }
 
-.navbar-collapse {
-  background-color: #008959 !important;
-}
 .navbar-collapse .nav-link {
   border: none !important;
 }
 
 .navbar-toggler {
   border-radius: 0 !important;
+}
+
+.bg-custom {
+  background-color: #002b6b !important;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
 }
 
 .banner {

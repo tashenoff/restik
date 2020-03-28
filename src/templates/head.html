@@ -18,9 +18,12 @@
         $(".fancybox").fancybox();
     });
 
-    $('#navs').click(function() {
-        console.log('salam')
+
+
+    $(window).scroll(function(){
+        $('nav').toggleClass('bg-custom', $(this).scrollTop() > 50);
     });
+
 
 </script>
 {% include './navbar.html' %}
