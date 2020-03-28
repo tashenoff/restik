@@ -55,3 +55,16 @@
     }
   }
 }
+
+
+.navbar-collapse{
+  background-color: $primary!important;
+  .nav-link{
+    border:none!important;
+  }
+}
+
+.navbar-toggler{
+  //background-color: $primary!important;
+  border-radius: 0!important;
+}

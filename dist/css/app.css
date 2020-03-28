@@ -13153,6 +13153,17 @@ html {
   color: #fff;
 }
 
+.navbar-collapse {
+  background-color: #008959 !important;
+}
+.navbar-collapse .nav-link {
+  border: none !important;
+}
+
+.navbar-toggler {
+  border-radius: 0 !important;
+}
+
 .banner {
   height: 60vh;
   max-height: 700px;
