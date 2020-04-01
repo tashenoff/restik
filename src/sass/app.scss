@@ -1,5 +1,6 @@
 //@import './node_modules/bootstrap/scss/bootstrap';
 //
+@import './node_modules/mq-scss/mq';
 @import "./node_modules/bootstrap/scss/functions";
 @import 'variables';
 @import "./node_modules/bootstrap/scss/mixins";
@@ -32,3 +33,4 @@
 @import 'home/team';
 @import 'menu/menu';
 @import 'gall/gall';
+@import 'owl';

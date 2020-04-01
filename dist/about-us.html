@@ -10,8 +10,8 @@
 <link rel="stylesheet" href="/css/libs.min.css"/>
 <link rel="stylesheet" href="/css/app.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -22,16 +22,42 @@
         $(".fancybox").fancybox();
     });
 
-
+    $(document).ready(function (){
+        $("#top").click(function (){
+            $('html, body').animate({
+                scrollTop: $("#home").offset().top
+            }, 2000);
+        });
+    });
 
     $(window).scroll(function(){
         $('nav').toggleClass('bg-custom', $(this).scrollTop() > 50);
     });
 
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
+    });
+
 
 </script>
 <nav id='navs' class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
+    <div class="container px-0">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,7 +65,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Главная <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="about-us.html">
@@ -84,7 +110,8 @@
             </section>
 
             <section>
-                <div class="container-fluid">
+                
+<div class="container-fluid my-5">
     <div class="row">
         <div class="col-lg-6">
             <div class="about__img">
@@ -94,7 +121,7 @@
 
         <div class="col-lg-6">
             <div class="about__content">
-                <h3>НЕМНОГО О НАС</h3>
+                <h3 class="my-4">НЕМНОГО О НАС</h3>
                 <p>
                     Ресторан узбекской кухни Uzbekistan — это уголок Узбекистана в столице Казахстана, где собираются все, кто хочет отдохнуть от насыщенной будничной суеты, приятно провести время и окунуться в дивный мир Востока. Посетить уютное заведение можно с коллегами, друзьями и детьми.У нас вы почувствуете домашний уют, дружескую и тёплую атмосферу.
                     Интерьер ресторана выполнен в восточном национальном стиле, который создаёт атмосферу изысканности, уюта и комфорта.
@@ -107,15 +134,17 @@
         
     </div>
 </div>
+
             </section>
             <section id="contacs">
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 
 <footer>
     <div class="footer__top bg-primary">
 
-        <div class="btn btn-secondary rounded-circle arrow__bottom">
+        <div id="top" class="btn btn-secondary rounded-circle arrow__bottom">
             <img src="img/arrow_up.png" alt="">
 
         </div>
@@ -124,8 +153,8 @@
         <p class="mt-5">Ресторан узбекской кухни Uzbekistan — это уголок Узбекистана в столице Казахстана, где собираются все, кто хочет отдохнуть от насыщенной будничной суеты, приятно провести время и окунуться в дивный мир Востока. Посетить уютное заведение можно с коллегами, друзьями и детьми.У нас вы почувствуете домашний уют, дружескую и тёплую атмосферу.</p>
     </div>
     </div>
-    <div class="footer__bottom bg-secondary p-3">
-        copirait
+    <div class="footer__bottom bg-secondary p-3 text-center text-uppercase text-white">
+       powered by Alex
     </div>
 </footer>
             </section>

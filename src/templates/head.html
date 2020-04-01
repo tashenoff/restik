@@ -6,8 +6,8 @@
 <link rel="stylesheet" href="/css/libs.min.css"/>
 <link rel="stylesheet" href="/css/app.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -18,10 +18,36 @@
         $(".fancybox").fancybox();
     });
 
-
+    $(document).ready(function (){
+        $("#top").click(function (){
+            $('html, body').animate({
+                scrollTop: $("#home").offset().top
+            }, 2000);
+        });
+    });
 
     $(window).scroll(function(){
         $('nav').toggleClass('bg-custom', $(this).scrollTop() > 50);
+    });
+
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
     });
 
 

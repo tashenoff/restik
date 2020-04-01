@@ -50,6 +50,7 @@
     "mq-scss": "^2.1.5",
     "owl.carousel": "^2.3.4",
     "prettier": "^1.19.1",
+    "sass-mq": "^5.0.1",
     "smoothscroll-polyfill": "^0.4.4"
   },
   "husky": {

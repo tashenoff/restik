@@ -1,3 +1,18 @@
+$mq-responsive: true;
+
+// Name your breakpoints in a way that creates a ubiquitous language
+// across team members. It will improve communication between
+// stakeholders, designers, developers, and testers.
+
+$BP-minimum: 320px;
+$BP-tiny: 350px;
+$BP-small: 480px;
+$BP-mobile: 600px;
+$BP-phablet: 770px;
+$BP-tablet: 960px;
+$BP-large: 1024px;
+$BP-page: 1440px;
+
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
@@ -123,7 +138,7 @@ $enable-hover-media-query:                    false !default; // Deprecated, no 
 $enable-grid-classes:                         true !default;
 $enable-pointer-cursor-for-buttons:           true !default;
 $enable-print-styles:                         true !default;
-$enable-responsive-font-sizes:                false !default;
+$enable-responsive-font-sizes:                true;
 $enable-validation-icons:                     true !default;
 $enable-deprecation-messages:                 true !default;
 
