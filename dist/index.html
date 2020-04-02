@@ -64,8 +64,8 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="/">Главная <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="/">Главная <span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="about-us.html">
@@ -80,19 +80,19 @@
                 <a class="nav-link" href="gall.html">
                     Галерея</a>
             </li>
-
-
+            <li class="nav-item">
+            <a class="nav-link" href="contact.html">Контакты</a>
+            </li>
 
 
         </ul>
-  <ul class="navbar-nav">
-      <li class="nav-item">
-          <a class="nav-link" href="contact.html">Контакты</a>
-      </li>
-  </ul>
-    </div>
+     </div>
+        <button type="button" onclick="window.location.href='https://api.whatsapp.com/send?phone=77779199991'" class="btn btn-outline-light"><span class="icon icon--wp"></span>Написать в whatsapp</button>
         </div>
+
+
 </nav>
+
 
 </head>
 <body>
@@ -104,12 +104,13 @@
                 <div class="home-video">
 
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+        <source src="/img/p2.mp4" type="video/mp4">
+        <source src="/img/p2.webm" type="video/webm" />
     </video>
    <div class="home-video__text">
        <img src="/img/logo.png" alt="">
-                <h1 class="mb-5">СЕТЬ УЗБЕКСКИХ РЕСТОРАНОВ</h1>
-<div class="btn btn-lg btn-primary">Посмотреть меню</div>
+                <h1 class="mb-5 text-uppercase">Узбекский ресторан</h1>
+<button onclick="window.location.href='/menu.html'" class="btn btn-lg btn-primary">Посмотреть меню</button>
    </div>
 
     <div class="home-video__arrow"><img src="img/arrow_down.png" alt="Сеть Узбекских ресторанов"></div>
@@ -260,6 +261,9 @@
        powered by Alex
     </div>
 </footer>
+
+
+
             </section>
         </div>
 
