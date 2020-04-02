@@ -13349,12 +13349,21 @@ video {
 }
 .home-video__arrow {
   position: absolute;
-  bottom: 40px;
+  bottom: 0;
   z-index: 4;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.home-video__arrow img {
+  width: 84%;
+  margin-top: 4px;
 }
 .home-video:before {
   content: '';

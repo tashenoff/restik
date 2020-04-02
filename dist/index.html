@@ -20,21 +20,19 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $(".fancybox").fancybox();
-    });
 
-    $(document).ready(function (){
         $("#top").click(function (){
             $('html, body').animate({
                 scrollTop: $("#home").offset().top
             }, 2000);
         });
-    });
 
-    $(window).scroll(function(){
-        $('nav').toggleClass('bg-custom', $(this).scrollTop() > 50);
-    });
+        $("#down").click(function (){
+            $('html, body').animate({
+                scrollTop: $("#about").offset().top
+            }, 2000);
+        });
 
-    $(document).ready(function(){
         $('.owl-carousel').owlCarousel({
             loop:true,
             margin:10,
@@ -52,6 +50,14 @@
                 }
             }
         })
+    });
+
+    $(window).scroll(function(){
+        $('nav').toggleClass('bg-custom', $(this).scrollTop() > 50);
+    });
+
+    $(document).ready(function(){
+
     });
 
 
@@ -113,11 +119,11 @@
 <button onclick="window.location.href='/menu.html'" class="btn btn-lg btn-primary">Посмотреть меню</button>
    </div>
 
-    <div class="home-video__arrow"><img src="img/arrow_down.png" alt="Сеть Узбекских ресторанов"></div>
+    <div id="down" class="home-video__arrow"><img src="img/da4.svg" alt="Сеть Узбекских ресторанов"></div>
 
 </div>
             </section>
-            <section class="about">
+            <section id="about" class="about">
                 <div class="container-fluid px-0">
     <div class="row no-gutters">
         <div class="col-lg-6 col-12">
@@ -172,9 +178,8 @@
     </div>
 </div>
             </section>
-            <section id="hom2e">
-                <section class="guest">
-<div class="container-fluid">
+            <section class="guest">
+                <div class="container-fluid">
     <div class="row">
         <div class="guest__wrapp">
             <h3 class="text-white text-uppercase">Наши гости</h3>
@@ -212,7 +217,7 @@
 </div>
     </div>
 </div>
-</section>
+
 
 
 
